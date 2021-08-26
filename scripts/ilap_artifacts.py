@@ -9,6 +9,7 @@ from scripts.artifacts.chromeExtensions import get_chromeExtensions
 from scripts.artifacts.chromeHistory import get_chromeHistory
 from scripts.artifacts.kikReturns import get_kikReturns
 from scripts.artifacts.kikProfilepic import get_kikProfilepic
+from scripts.artifacts.snapchatReturn import get_snapchatReturn
 from scripts.artifacts.icloudReturnsAcc import get_icloudReturnsAcc
 from scripts.artifacts.icloudMsgsInCloud import get_icloudMsgsInCloud
 from scripts.artifacts.icloudReturnsLogs import get_icloudReturnsLogs
@@ -44,6 +45,7 @@ tosearch = {
     'chromeHistory':('Chrome', ('*/BrowserHistory.json')),
     'kikReturns':('Kik Returns', ('*/logs/*.txt','*/logs/*','*/content/*')),
     'kikProfilepic':('Kik Returns', ('*profile-pic.jpg')),
+    'snapchatReturn':('Snapchat Returns', ('*/Production*/*-*-*/*.csv')),
     'icloudReturnsAcc':('iCloud Returns', ('*/Account/*_AccountDetails.xlsx')),
     'icloudMsgsInCloud':('iCloud Returns', ('*/Messagesinicloud/*MessagesInICloud.*')),
     'icloudMsgsInCloud':('iCloud Returns', ('*/Messagesinicloud/*MessagesInICloud*', '*/Messages/MessagesInICloud*')),

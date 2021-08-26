@@ -291,3 +291,32 @@ def kmlgen(report_folder, kmlactivity, data_list, data_headers):
     db.commit()
     db.close()
     kml.save(os.path.join(kml_report_folder, f'{kmlactivity}.kml'))
+    
+def snapchat_month(string_month):
+    if string_month == 'Jan':
+        numeric_month = '01'
+    elif string_month == 'Feb':
+        numeric_month = '02'
+    elif string_month == 'Mar':
+        numeric_month = '03' 
+    elif string_month == 'Apr':
+        numeric_month = '04'
+    elif string_month == 'May':
+        numeric_month = '05'
+    elif string_month == 'Jun':
+        numeric_month = '06'
+    elif string_month == 'Jul':
+        numeric_month = '07'
+    elif string_month == 'Aug':
+        numeric_month = '08'
+    elif string_month == 'Sep':
+        numeric_month = '09'
+    elif string_month == 'Oct':
+        numeric_month = '10'
+    elif string_month == 'Nov':
+        numeric_month = '11'
+    elif string_month == 'Dec':
+        numeric_month = '12'
+    else: 
+        numeric_month = string_month
+    return numeric_month

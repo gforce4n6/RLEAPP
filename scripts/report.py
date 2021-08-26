@@ -38,6 +38,13 @@ def get_icon_name(category, artifact):
     elif category == 'KIK RETURNS':       
         if artifact == 'KIK - PROFILE PIC': icon = 'image'
         else:                               icon = 'file-text'
+    elif category == 'SNAPCHAT RETURNS':
+        if artifact == 'SNAPCHAT - SUBSCRIBER INFO': icon = 'user'
+        elif artifact == 'SNAPCHAT - IP LOGS':       icon = 'file-text'
+        elif artifact == 'SNAPCHAT - GEOLOCATIONS':  icon = 'navigation'
+        elif artifact == 'SNAPCHAT - MEMORIES':      icon = 'camera'
+        elif artifact == 'SNAPCHAT - CHATS':         icon = 'message-circle'
+        else:                                        icon = 'tool'
     elif category == 'CONTACTS':            icon = 'user'
     elif category == 'INSTAGRAM ARCHIVE':  
         if artifact == 'INSTAGRAM ARCHIVE - ACCOUNT INFO': icon = 'user'
@@ -46,6 +53,7 @@ def get_icon_name(category, artifact):
     elif category == 'ICLOUD RETURNS': 
         if artifact == 'ICLOUD - ACCOUNT FEATURES': icon = 'user'
         else:                                       icon = 'file-text'
+    
     return icon
     
     '''
